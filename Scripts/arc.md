@@ -34,7 +34,7 @@ Ctrl+Shift+V switches to preview.
 Submit .sh script to download data (do this on login node). Might need to give permission. Ex. with LakeSP data:
 ```
 chmod +x download_lakesp_command.sh
-./download_lakesp_command.sh <start_date> <end_date> <regex>
+./download_lakesp_command.sh <start_date> <end_date>
 ```
 
 Submit a script to run on compute nodes:

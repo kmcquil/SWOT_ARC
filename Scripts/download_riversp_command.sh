@@ -1,5 +1,13 @@
 #!/bin/bash
-chmod +x download_riversp_command.sh
+
+# Arguments 
+# 1. start date in the format YYYY-MM-DDTHH:MM:SSZ
+# 2. end date in the format YYYY-MM-DDTHH:MM:SSZ
+
+# Example command: 
+# ./download_riversp_command.sh  2023-01-01T00:00:00Z 2024-07-07T23:59:59Z 
+
+#chmod +x download_riversp_command.sh
 module load Anaconda3/2022.10
 source activate /home/kmcquil/env/swot_normalq
-podaac-data-downloader -c SWOT_L2_HR_RiverSP_2.0 -d /projects/swot/Data/SWOT_L2_HR_RiverSP_2.0/ --start-date 2023-01-01T00:00:00Z --end-date 2024-07-07T23:59:59Z --granule-name *_NA_*
+podaac-data-downloader -c SWOT_L2_HR_RiverSP_2.0 -d /projects/swot/Data/SWOT_L2_HR_RiverSP_2.0/ --start-date $1 --end-date $2 --granule-name *_NA_*
