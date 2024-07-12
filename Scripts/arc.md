@@ -33,7 +33,11 @@ Ctrl+Shift+V switches to preview.
 ## Frequently used commands 
 Submit .sh script to download data (do this on login node). Might need to give permission. Ex. with LakeSP data:
 ```
+# Look in the file to see the last date downloaded. Use that as the next start date 
+nano download_lakesp_command.sh 
+# First time this script is run, it needs permission
 chmod +x download_lakesp_command.sh
+# Run the script. Dates should be in format YYYY-MM-DDTHH:MM:SSZ
 ./download_lakesp_command.sh <start_date> <end_date>
 ```
 

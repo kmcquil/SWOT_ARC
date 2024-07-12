@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Last date this pulled data up to: 2024-07-07T23:59:59Z
+# PODAAC won't redownload data but it does speed up the search to subset the dates
+
 # Arguments 
 # 1. start date in the format YYYY-MM-DDTHH:MM:SSZ
 # 2. end date in the format YYYY-MM-DDTHH:MM:SSZ
