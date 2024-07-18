@@ -10,21 +10,27 @@
 
 - Create the environment on the node type where you will partially run the code.
 - Use 'source' instead of 'conda'
+- Will also have to set up the  .netrc file. Details in the podaac-data-downloader tutorial
 
 ```
 
 module load Anaconda3/2022.10
-conda create -p /projects/swot/env/swot_normalq python=3.9 pip
-source activate /projects/swot/env/swot_normalq
+conda create -p /home/kmcquil/env/swot_normalq python=3.9 pip
+source activate /home/kmcquil/env/swot_normalq
+
+pip install geopandas
+pip install netCDF4
+pip install numpy
+pip install pandas
 pip install podaac-data-subscriber
-Pip install numpy
-Pip install pandas
-Pip install geopandas
+pip install matplotlib
+pip install matplotlib_scalebar
 pip install ipykernel
 conda install ipython
 conda install jupyter
-conda install jupyterlab
-source deactivate /projects/swot/env/swot_normalq
+pip install --force-reinstall charset-normalizer
+
+source deactivate /home/kmcquil/env/swot_normalq
 
 ```
 
@@ -63,7 +69,7 @@ squeue -u <username>
     - Number of hours: 1 (up to you)
     - Number of nodes: 1 (up to you)
     - Number of cores: 1 (up to you)
-    - conda environment: /projects/swot/env/swot_normalq (path to your conda env)
+    - conda environment: /home/kmcquil/env/swot_normalq (path to your conda env)
     - default directory to start notebooks: /projects/swot/ (up to you)
     - python user base: ~/.local
     - Required module: anaconda3/2022.10

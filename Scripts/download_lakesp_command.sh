@@ -16,7 +16,7 @@ echo "End date: $2"
 
 #chmod +x download_lakesp_command.sh
 module load Anaconda3/2022.10
-source activate /projects/swot/env/swot_normalq
+source activate /home/kmcquil/env/swot_normalq
 podaac-data-downloader -c SWOT_L2_HR_LakeSP_2.0 -d /projects/swot/Data/SWOT_L2_HR_LakeSP_2.0/ --start-date $1 --end-date $2 --granule-name *_NA_*
 
 
