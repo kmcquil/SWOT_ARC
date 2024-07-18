@@ -14,8 +14,8 @@
 ```
 
 module load Anaconda3/2022.10
-conda create -p /home/kmcquil/env/swot_normalq python=3.9 pip
-source activate /home/kmcquil/env/swot_normalq
+conda create -p /projects/swot/env/swot_normalq python=3.9 pip
+source activate /projects/swot/env/swot_normalq
 pip install podaac-data-subscriber
 Pip install numpy
 Pip install pandas
@@ -24,7 +24,7 @@ pip install ipykernel
 conda install ipython
 conda install jupyter
 conda install jupyterlab
-source deactivate /home/kmcquil/env/swot_normalq
+source deactivate /projects/swot/env/swot_normalq
 
 ```
 
@@ -63,7 +63,7 @@ squeue -u <username>
     - Number of hours: 1 (up to you)
     - Number of nodes: 1 (up to you)
     - Number of cores: 1 (up to you)
-    - conda environment: /home/kmcquil/env/swot_normalq (path to your conda env)
+    - conda environment: /projects/swot/env/swot_normalq (path to your conda env)
     - default directory to start notebooks: /projects/swot/ (up to you)
     - python user base: ~/.local
     - Required module: anaconda3/2022.10

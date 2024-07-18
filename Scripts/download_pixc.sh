@@ -16,5 +16,5 @@ echo "String match: $3"
 # Load the anaconda environment, search podaac, and download 
 #chmod +x download_pixc.sh
 module load Anaconda3/2022.10
-source activate /home/kmcquil/env/swot_normalq
+source activate /projects/swot/env/swot_normalq
 podaac-data-downloader -c SWOT_L2_HR_PIXC_2.0 -d /projects/swot/Data/SWOT_L2_HR_PIXC_2.0/ --start-date $1 --end-date $2 --granule-name $3
