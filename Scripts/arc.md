@@ -37,6 +37,10 @@ source deactivate /home/kmcquil/env/swot_normalq
 Ctrl+Shift+V switches to preview.
 
 ## Frequently used commands 
+Log into the cluster
+```
+ssh kmcquil@tinkercliffs2.arc.vt.edu
+```
 Submit .sh script to download data (do this on login node). Might need to give permission. Ex. with LakeSP data:
 ```
 # Look in the file to see the last date downloaded. Use that as the next start date 
