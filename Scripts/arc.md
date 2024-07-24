@@ -10,7 +10,7 @@
 
 - Create the environment on the node type where you will partially run the code.
 - Use 'source' instead of 'conda'
-- Will also have to set up the  .netrc file. Details in the podaac-data-downloader tutorial
+- Will also have to set up the  .netrc file. Details in the podaac-data-downloader tutorial. 
 
 ```
 
@@ -33,6 +33,13 @@ pip install --force-reinstall charset-normalizer
 source deactivate /home/kmcquil/env/swot_normalq
 
 ```
+
+- When setting up the .netrc, you must run this command afterwards
+```
+chmod og-rw .netrc
+
+```
+
 
 Ctrl+Shift+V switches to preview.
 
